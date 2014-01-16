@@ -136,6 +136,7 @@
 		6C4037471882CA6F007F5847 /* -_0017_Rectangle-10-copy-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C4036D41882CA6F007F5847 /* -_0017_Rectangle-10-copy-3.png */; };
 		6C4037481882CA6F007F5847 /* 4 phone with.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C4036D51882CA6F007F5847 /* 4 phone with.png */; };
 		6C4037491882CA6F007F5847 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C4036D61882CA6F007F5847 /* 4.png */; };
+		6C781951188703A700C741BC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C781950188703A700C741BC /* MapKit.framework */; };
 		6CF08946188481C3000B8FDF /* SPCategoryResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF08945188481C3000B8FDF /* SPCategoryResultVC.m */; };
 /* End PBXBuildFile section */
 
@@ -284,6 +285,7 @@
 		6C4036D41882CA6F007F5847 /* -_0017_Rectangle-10-copy-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-_0017_Rectangle-10-copy-3.png"; sourceTree = "<group>"; };
 		6C4036D51882CA6F007F5847 /* 4 phone with.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4 phone with.png"; sourceTree = "<group>"; };
 		6C4036D61882CA6F007F5847 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		6C781950188703A700C741BC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6CF08944188481C3000B8FDF /* SPCategoryResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCategoryResultVC.h; sourceTree = "<group>"; };
 		6CF08945188481C3000B8FDF /* SPCategoryResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCategoryResultVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -295,6 +297,7 @@
 			files = (
 				6C40362C1882B48A007F5847 /* CoreGraphics.framework in Frameworks */,
 				6C40362E1882B48A007F5847 /* UIKit.framework in Frameworks */,
+				6C781951188703A700C741BC /* MapKit.framework in Frameworks */,
 				6C40362A1882B48A007F5847 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +337,7 @@
 		6C4036281882B48A007F5847 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C781950188703A700C741BC /* MapKit.framework */,
 				6C4036291882B48A007F5847 /* Foundation.framework */,
 				6C40362B1882B48A007F5847 /* CoreGraphics.framework */,
 				6C40362D1882B48A007F5847 /* UIKit.framework */,
@@ -614,6 +618,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Mokshasd;
 				TargetAttributes = {
+					6C4036251882B48A007F5847 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					6C4036461882B48A007F5847 = {
 						TestTargetID = 6C4036251882B48A007F5847;
 					};

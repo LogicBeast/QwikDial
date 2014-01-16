@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface SPCategoryResultVC : UIViewController
+@interface SPCategoryResultVC : UIViewController <MKMapViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @end

@@ -13,6 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self insertProfileButtonWithImage];
     return YES;
 }
 							
@@ -41,6 +42,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+-(void)insertProfileButtonWithImage
+{
+        UIImageView * img =[[UIImageView alloc]initWithFrame:CGRectMake(30, 22, 93, 33)];
+    
+        [self.window addSubview:img];
+        [self.window bringSubviewToFront:img];
+    [img setImage:[UIImage imageNamed:@"-_0000_Logo.png"]];
+   
 }
 
 @end
